@@ -48,6 +48,7 @@
             padding: 40px;
             animation: slideIn 0.8s ease-out;
             z-index: 10;
+            position: relative;
         }
 
         @keyframes slideIn {
@@ -69,6 +70,7 @@
         .emoji {
             font-size: 60px;
             animation: bounce 1s ease-in-out infinite;
+            display: inline-block;
         }
 
         @keyframes bounce {
@@ -115,6 +117,10 @@
             animation-delay: 0.4s;
         }
 
+        .gift-item:nth-child(3) {
+            animation-delay: 0.6s;
+        }
+
         @keyframes fadeInUp {
             from {
                 opacity: 0;
@@ -134,6 +140,7 @@
             font-size: 3em;
             margin-right: 20px;
             animation: pulse 2s ease-in-out infinite;
+            flex-shrink: 0;
         }
 
         @keyframes pulse {
@@ -188,6 +195,7 @@
         .heart {
             color: #e74c3c;
             animation: heartbeat 1.3s ease-in-out infinite;
+            display: inline-block;
         }
 
         @keyframes heartbeat {
@@ -247,16 +255,15 @@
         </div>
 
         <div class="message">
-            <p>S láskou od maminky a tatínka<span class="heart">❤️</span></p>
+            <p>S láskou od maminky a tatínka <span class="heart">❤️</span></p>
         </div>
 
         <div class="gift-container">
-            
             <div class="gift-item">
                 <div class="gift-icon">🖥️</div>
                 <div class="gift-info">
                     <h3>iMac</h3>
-                    <p>Příspěvek na tvůj iMac <span class="amount">8000 Kč</span></p>
+                    <p>Příspěvek na tvůj iMac <span class="amount">- 8000 Kč</span></p>
                 </div>
             </div>
         </div>
@@ -284,7 +291,7 @@
         // Vytváření sněhu
         setInterval(createSnowflake, 300);
 
-        // Konfety efekt při najetí
+        // Konfety efekt při kliknutí
         document.querySelector('.container').addEventListener('click', () => {
             for (let i = 0; i < 50; i++) {
                 createConfetti();
@@ -328,9 +335,8 @@
             animate();
         }
 
-        // Zvuk při otevření (volitelně)
+        // Log když se stránka otevře
         window.addEventListener('load', () => {
-            // Playlistem zvuku (nepřidáváme звук bez svolení)
             console.log('Vánoční stránka se otevřela! 🎄');
         });
     </script>
