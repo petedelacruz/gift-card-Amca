@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VĂˇnoÄŤnĂ­ DĂˇrek đźŽ„</title>
+    <title>Vánoční Dárek 🎄</title>
     <style>
         * {
             margin: 0;
@@ -249,36 +249,36 @@
     <div class="container">
         <div class="ribbon"></div>
         <div class="header">
-            <div class="emoji">đźŽ</div>
-            <h1>MĂˇĹˇ DĂˇrek!</h1>
-            <p class="subtitle">VybalenĂ­me si to spolu đźŽ„</p>
+            <div class="emoji">🎁</div>
+            <h1>Máš Dárek!</h1>
+            <p class="subtitle">Vybaleníme si to spolu 🎄</p>
         </div>
 
         <div class="message">
-            <p>S lĂˇskou od maminky a tatĂ­nka <span class="heart">âť¤ď¸Ź</span></p>
+            <p>S láskou od maminky a tatínka <span class="heart">❤️</span></p>
         </div>
 
         <div class="gift-container">
             <div class="gift-item">
-                <div class="gift-icon">đź–Ąď¸Ź</div>
+                <div class="gift-icon">🖥️</div>
                 <div class="gift-info">
                     <h3>iMac</h3>
-                    <p>PĹ™Ă­spÄ›vek na tvĹŻj iMac <span class="amount">- 8000 KÄŤ</span></p>
+                    <p>Příspěvek na tvůj iMac <span class="amount">- 8000 Kč</span></p>
                 </div>
             </div>
         </div>
 
         <div class="footer">
-            <p>VĂˇnoce 2025 đźŽ…</p>
+            <p>Vánoce 2025 🎅</p>
         </div>
     </div>
 
     <script>
-        // GenerovĂˇnĂ­ snÄ›hovĂ˝ch vloÄŤek
+        // Generování sněhových vloček
         function createSnowflake() {
             const snowflake = document.createElement('div');
             snowflake.classList.add('snowflake');
-            snowflake.textContent = ['âť„ď¸Ź', 'â›„', 'âť…', 'âť†'][Math.random() * 4 | 0];
+            snowflake.textContent = ['❄️', '⛄', '❅', '❆'][Math.random() * 4 | 0];
             snowflake.style.left = Math.random() * window.innerWidth + 'px';
             snowflake.style.animationDuration = Math.random() * 10 + 10 + 's';
             snowflake.style.opacity = Math.random() * 0.5 + 0.3;
@@ -288,10 +288,10 @@
             setTimeout(() => snowflake.remove(), 20000);
         }
 
-        // VytvĂˇĹ™enĂ­ snÄ›hu
+        // Vytváření sněhu
         setInterval(createSnowflake, 300);
 
-        // Konfety efekt pĹ™i kliknutĂ­
+        // Konfety efekt při kliknutí
         document.querySelector('.container').addEventListener('click', () => {
             for (let i = 0; i < 50; i++) {
                 createConfetti();
@@ -301,7 +301,7 @@
         function createConfetti() {
             const confetti = document.createElement('div');
             confetti.classList.add('confetti');
-            confetti.textContent = ['đźŽ‰', 'âś¨', 'đźŽŠ', 'â­', 'đźŚź'][Math.random() * 5 | 0];
+            confetti.textContent = ['🎉', '✨', '🎊', '⭐', '🌟'][Math.random() * 5 | 0];
             confetti.style.left = Math.random() * window.innerWidth + 'px';
             confetti.style.top = Math.random() * window.innerHeight + 'px';
             confetti.style.fontSize = Math.random() * 30 + 20 + 'px';
@@ -335,9 +335,9 @@
             animate();
         }
 
-        // Log kdyĹľ se strĂˇnka otevĹ™e
+        // Log když se stránka otevře
         window.addEventListener('load', () => {
-            console.log('VĂˇnoÄŤnĂ­ strĂˇnka se otevĹ™ela! đźŽ„');
+            console.log('Vánoční stránka se otevřela! 🎄');
         });
     </script>
 </body>
